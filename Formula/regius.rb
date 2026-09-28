@@ -5,20 +5,20 @@
 class Regius < Formula
   desc "Regius CLI tool for web application development"
   homepage "https://github.com/hbarral/regius"
-  version "1.10.2"
+  version "1.11.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/hbarral/regius/releases/download/v1.10.2/regius_Darwin_x86_64.tar.gz"
-      sha256 "31d8fb57a35467e5f52430a424c322f7eec2f9e0d30a83eb233da8d33afb4460"
+      url "https://github.com/hbarral/regius/releases/download/v1.11.0/regius_Darwin_x86_64.tar.gz"
+      sha256 "a58bc3e98c49ecb6fb27d0b67dc3b93051e73ba3ae113d3baaf6c7cf3f779ecd"
 
       def install
         bin.install "regius"
       end
     end
     on_arm do
-      url "https://github.com/hbarral/regius/releases/download/v1.10.2/regius_Darwin_arm64.tar.gz"
-      sha256 "c472dd28ee36873abfb84d69f5d374c2867e1e0b4becc85e56ea28b71a201506"
+      url "https://github.com/hbarral/regius/releases/download/v1.11.0/regius_Darwin_arm64.tar.gz"
+      sha256 "f768c546becb0c19269b82425d2fd509773163af5eebfcb4a5091bb3b26d7de5"
 
       def install
         bin.install "regius"
@@ -29,8 +29,8 @@ class Regius < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hbarral/regius/releases/download/v1.10.2/regius_Linux_x86_64.tar.gz"
-        sha256 "b4d2064d87a44a224272bfce4dec3d326ef9bfab4d3e3684952c0ab48cfe8c0f"
+        url "https://github.com/hbarral/regius/releases/download/v1.11.0/regius_Linux_x86_64.tar.gz"
+        sha256 "d6a0a54b412383d3f6c866fefc90214dfeba5f4f49ce330368a6f5bfcdbf342d"
 
         def install
           bin.install "regius"
@@ -39,8 +39,8 @@ class Regius < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hbarral/regius/releases/download/v1.10.2/regius_Linux_arm64.tar.gz"
-        sha256 "cac8d543369776e558c3cafe5b11ba9cf3b9f442d422baf3b3304fb9fdc3f7e4"
+        url "https://github.com/hbarral/regius/releases/download/v1.11.0/regius_Linux_arm64.tar.gz"
+        sha256 "2582f2b815e16d6205a5ecbdb30697986e3814ad783893bba515f546337a813c"
 
         def install
           bin.install "regius"
